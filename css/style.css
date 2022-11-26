@@ -1,0 +1,110 @@
+*{padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+}
+nav{
+  background-color: black;
+}
+nav ul{
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  transition: .3s;
+  margin-left: -3px;
+}
+nav ul li a{
+  color: white;
+  display: inline-block;
+  padding: 15px 20px;
+}
+nav ul li:hover{
+  background-color: rgb(93, 92, 92);
+}
+
+
+/* dropdown */
+.dropdown{
+  position: relative;
+}
+.dropdown:hover .dropdown_content{
+  display: block;
+}
+.dropdown .dropdown_content{
+  position: absolute;
+  max-width: 200px;
+  background-color: aqua;
+  display: none;
+}
+.dropdown .dropdown_content li{
+  display: block;
+  width: 200px;
+  margin-left: 0;
+}
+.dropdown .dropdown_content li a{
+  color: black;
+}
+.dropdown .dropdown_content li{
+  transition: .3s;
+}
+.dropdown .dropdown_content li:hover{
+  background-color: gray;
+  width: 100%;
+}
+
+
+/* drop_web */
+.drop_web{
+  position: relative;
+}
+.drop_web .drop_web_content{
+  position: absolute;
+  top: 0;
+  left: 199px;
+  background-color: tomato;
+  display: none;
+}
+.drop_web .drop_web_content li{
+  width: 240px;
+  transition: .3s;
+}
+
+.drop_web .drop_web_content li:hover{
+  background-color: chartreuse;
+}
+.drop_web:hover .drop_web_content{
+  display: block;
+}
+
+/* drop_graphic */
+
+.drop_graphic{
+  position: relative;
+}
+.drop_graphic .drop_graphic_content{
+  position: absolute;
+  top: 0;
+  right: 200px;
+  background-color: burlywood;
+  display: none;
+}
+.drop_graphic .drop_graphic_content li:hover{
+  background-color: indigo;
+}
+.drop_graphic .drop_graphic_content li:hover a{
+  color: white;
+}
+.drop_graphic:hover .drop_graphic_content{
+  display: block;
+}
